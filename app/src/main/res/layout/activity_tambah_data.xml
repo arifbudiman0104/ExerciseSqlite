@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".tambah_data">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="MissingConstraints"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:text="@string/tambah_data"
+            android:textSize="22dp"
+            android:textStyle="bold"/>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center|left"
+                    android:text="@string/nama"
+                    android:textSize="20sp"/>
+
+                <TextView
+                    android:layout_width="10dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text=":"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/addnama"
+                    android:layout_width="240dp"
+                    android:layout_height="match_parent"
+                    android:ems="10"
+                    android:hint="@string/masukkan_nama"
+                    android:inputType="textPersonName" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center|left"
+                    android:text="@string/no_telp"
+                    android:textSize="20sp"/>
+
+                <TextView
+                    android:layout_width="10dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text=":"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/addNoTelp"
+                    android:layout_width="240dp"
+                    android:layout_height="match_parent"
+                    android:ems="10"
+                    android:hint="@string/masukan_no_telp"
+                    android:inputType="phone"/>
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center|left"
+                    android:text="@string/email"
+                    android:textSize="20sp"/>
+
+                <TextView
+                    android:layout_width="10dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text=":"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/addEmail"
+                    android:layout_width="240dp"
+                    android:layout_height="match_parent"
+                    android:ems="10"
+                    android:hint="@string/masukkan_email"
+                    android:inputType="textEmailAddress"/>
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center|left"
+                    android:text="@string/Alamat"
+                    android:textSize="20sp"/>
+
+                <TextView
+                    android:layout_width="10dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text=":"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/addAlamat"
+                    android:layout_width="240dp"
+                    android:layout_height="match_parent"
+                    android:ems="10"
+                    android:hint="@string/masukkan_alamat"
+                    android:inputType="text"/>
+            </TableRow>
+        </TableLayout>
+
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_gravity="center"
+            android:text="SIMPAN"
+            android:onClick="run"
+            tools:ignore="onClick"/>
+    </LinearLayout>
+</ScrollView>
+
