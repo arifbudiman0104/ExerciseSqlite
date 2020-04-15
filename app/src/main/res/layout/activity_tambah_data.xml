@@ -147,7 +147,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="50dp"
             android:layout_gravity="center"
-            android:text="SIMPAN"
+            android:text="@string/simpan"
             android:onClick="run"
             tools:ignore="onClick"/>
     </LinearLayout>
