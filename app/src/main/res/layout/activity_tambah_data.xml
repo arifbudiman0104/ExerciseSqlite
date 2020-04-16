@@ -9,8 +9,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:ignore="MissingConstraints"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
 
         <TextView
             android:id="@+id/tv1"
@@ -20,7 +20,7 @@
             android:gravity="center"
             android:text="@string/tambah_data"
             android:textSize="22dp"
-            android:textStyle="bold"/>
+            android:textStyle="bold" />
 
         <TableLayout
             android:layout_width="match_parent"
@@ -30,15 +30,15 @@
             <TableRow
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:layout_gravity="center">
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp">
 
                 <TextView
                     android:layout_width="120dp"
                     android:layout_height="match_parent"
                     android:gravity="center|left"
                     android:text="@string/nama"
-                    android:textSize="20sp"/>
+                    android:textSize="20sp" />
 
                 <TextView
                     android:layout_width="10dp"
@@ -55,18 +55,19 @@
                     android:hint="@string/masukkan_nama"
                     android:inputType="textPersonName" />
             </TableRow>
+
             <TableRow
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:layout_gravity="center">
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp">
 
                 <TextView
                     android:layout_width="120dp"
                     android:layout_height="match_parent"
                     android:gravity="center|left"
                     android:text="@string/no_telp"
-                    android:textSize="20sp"/>
+                    android:textSize="20sp" />
 
                 <TextView
                     android:layout_width="10dp"
@@ -81,20 +82,21 @@
                     android:layout_height="match_parent"
                     android:ems="10"
                     android:hint="@string/masukan_no_telp"
-                    android:inputType="phone"/>
+                    android:inputType="phone" />
             </TableRow>
+
             <TableRow
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:layout_gravity="center">
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp">
 
                 <TextView
                     android:layout_width="120dp"
                     android:layout_height="match_parent"
                     android:gravity="center|left"
                     android:text="@string/email"
-                    android:textSize="20sp"/>
+                    android:textSize="20sp" />
 
                 <TextView
                     android:layout_width="10dp"
@@ -109,20 +111,21 @@
                     android:layout_height="match_parent"
                     android:ems="10"
                     android:hint="@string/masukkan_email"
-                    android:inputType="textEmailAddress"/>
+                    android:inputType="textEmailAddress" />
             </TableRow>
+
             <TableRow
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:layout_gravity="center">
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp">
 
                 <TextView
                     android:layout_width="120dp"
                     android:layout_height="match_parent"
                     android:gravity="center|left"
                     android:text="@string/Alamat"
-                    android:textSize="20sp"/>
+                    android:textSize="20sp" />
 
                 <TextView
                     android:layout_width="10dp"
@@ -137,7 +140,7 @@
                     android:layout_height="match_parent"
                     android:ems="10"
                     android:hint="@string/masukkan_alamat"
-                    android:inputType="text"/>
+                    android:inputType="text" />
             </TableRow>
         </TableLayout>
 
@@ -145,11 +148,11 @@
             android:id="@+id/btn1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="50dp"
             android:layout_gravity="center"
-            android:text="@string/simpan"
+            android:layout_marginTop="50dp"
             android:onClick="run"
-            tools:ignore="onClick"/>
+            android:text="@string/simpan"
+            tools:ignore="onClick" />
     </LinearLayout>
 </ScrollView>
 
